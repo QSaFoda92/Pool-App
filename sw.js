@@ -1,6 +1,6 @@
 self.addEventListener('install', (e)=>{
-  e.waitUntil(caches.open('pool-v1').then(c=>c.addAll([
-    './','./index.html','./app.js','./icons/icon-192.png','./icons/icon-512.png'
+  e.waitUntil(caches.open('pool-v2').then(c=>c.addAll([
+    './','./index.html','./style.css','./app.js'
   ])));
 });
 self.addEventListener('fetch', (e)=>{
